@@ -16,7 +16,6 @@ value class LottoNumbers(val value: Set<LottoNumber>) {
     operator fun contains(lottoNumber: LottoNumber): Boolean = value.contains(lottoNumber)
 
     companion object {
-        const val LOTTO_PRICE = 1000
         const val LOTTO_NUMBER_SIZE = 6
     }
 }

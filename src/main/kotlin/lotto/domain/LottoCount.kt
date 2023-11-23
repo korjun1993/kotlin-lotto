@@ -6,7 +6,7 @@ data class LottoCount(val value: Int) {
     }
 
     constructor(price: Price) : this(
-        price.value / LottoNumbers.LOTTO_PRICE
+        price.value / Price.LOTTO_PRICE
     )
 
     operator fun minus(other: LottoCount): LottoCount {

@@ -6,10 +6,11 @@ data class Price(val value: Int) {
     }
 
     private fun isValidPrice(price: Int): Boolean {
-        return price >= MIN_PRICE && price.mod(LottoNumbers.LOTTO_PRICE) == 0
+        return price >= MIN_PRICE && price.mod(LOTTO_PRICE) == 0
     }
 
     companion object {
+        const val LOTTO_PRICE = 1000
         private const val MIN_PRICE = 0
     }
 }

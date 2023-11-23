@@ -8,7 +8,7 @@ class LottoGame(val lottoList: List<LottoNumbers>) {
     }
 
     private fun getTotalPrice(): Int =
-        lottoList.size * LottoNumbers.LOTTO_PRICE
+        lottoList.size * Price.LOTTO_PRICE
 
     private fun getRewards(winningNumbers: WinningNumbers): List<LottoReward> =
         lottoList.map { winningNumbers.match(it) }
