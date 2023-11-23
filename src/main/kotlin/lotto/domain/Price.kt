@@ -1,6 +1,7 @@
 package lotto.domain
 
-data class Price(val value: Int) {
+@JvmInline
+value class Price(val value: Int) {
     init {
         require(isValidPrice(value)) { "잘못된 금액입니다. value=$value" }
     }

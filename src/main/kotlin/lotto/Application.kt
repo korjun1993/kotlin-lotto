@@ -6,7 +6,7 @@ import lotto.view.*
 fun main() {
     val price = Price(readPrice())
 
-    val totalLottoCount = LottoCount(price)
+    val totalLottoCount = LottoCount.from(price)
     val lottoManualCount = LottoCount(readManualLottoCount())
     val lottoAutoCount = totalLottoCount - lottoManualCount
 
